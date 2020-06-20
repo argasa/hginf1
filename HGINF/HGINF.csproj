@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A90EE3B-20BA-41D6-B7E0-CEC73DB8FB98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HGINF</RootNamespace>
+    <AssemblyName>HGINF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\Admin\Documents\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\\ProgramFiles\hginf\</InstallUrl>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>156CA512AF6C6E72035E04AEF8588C8059185B4F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HGINF_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IpPCnum.cs" />
+    <Compile Include="Migrations\202005171448461_InitialCreate.cs" />
+    <Compile Include="Migrations\202005171448461_InitialCreate.designer.cs">
+      <DependentUpon>202005171448461_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005180246427_AddRequestNomPC.cs" />
+    <Compile Include="Migrations\202005180246427_AddRequestNomPC.designer.cs">
+      <DependentUpon>202005180246427_AddRequestNomPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005180436331_AddRequestCategory.cs" />
+    <Compile Include="Migrations\202005180436331_AddRequestCategory.designer.cs">
+      <DependentUpon>202005180436331_AddRequestCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005181041535_IpPCnum.cs" />
+    <Compile Include="Migrations\202005181041535_IpPCnum.designer.cs">
+      <DependentUpon>202005181041535_IpPCnum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="RequestContext.cs" />
+    <Compile Include="WorkBD.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005171448461_InitialCreate.resx">
+      <DependentUpon>202005171448461_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005180246427_AddRequestNomPC.resx">
+      <DependentUpon>202005180246427_AddRequestNomPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005180436331_AddRequestCategory.resx">
+      <DependentUpon>202005180436331_AddRequestCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005181041535_IpPCnum.resx">
+      <DependentUpon>202005181041535_IpPCnum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="HGINF_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kreqweqst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelka1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\язычок %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\язычок %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Отправить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zayavka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\направления %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tnx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcnum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcnum1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcnum2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setupbody.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Отправить-заявку.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказать-звонок-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\udpomoshwhite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказать-звонок.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Отправить-заявку-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\udpomoshred.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inst.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cr].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cr]1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sett.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sett2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
